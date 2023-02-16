@@ -1,4 +1,4 @@
-FROM maven:amazoncorrettto AS builder
+FROM maven:amazoncorretto AS builder
 WORKDIR /app
 COPY . .
 RUN mvn clean install -U
